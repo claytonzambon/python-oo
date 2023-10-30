@@ -19,3 +19,5 @@ class Conta:
     def tranfere(self, valor, destino):
         self.saca(valor)
         destino.deposita(valor)
+
+    def eh_inadimplente(self, cliente):
