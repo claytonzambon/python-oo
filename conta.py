@@ -20,4 +20,11 @@ class Conta:
         self.saca(valor)
         destino.deposita(valor)
 
-    def eh_inadimplente(self, cliente):
+    def get_saldo(self):
+        return self.__saldo
+
+    def get_titular(self):
+        return self.__titular
+
+    def get_limite(self):
+        return self.__limite
