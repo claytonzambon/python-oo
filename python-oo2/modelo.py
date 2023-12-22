@@ -12,4 +12,4 @@ vingadores = Filme('Vingadores - Guerra Infinita', 2018, 160)
 print(vingadores.nome)
 
 friends = Serie('Friends', 1995, 12)
-print(friends.nome)
+print (f'Nome: {friends.nome} - Ano: {friends.ano} - Temporadas: {friends.temporadas}')
