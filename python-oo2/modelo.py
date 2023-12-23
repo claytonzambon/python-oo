@@ -9,7 +9,7 @@ class Serie:
         self.ano = ano
         self.temporadas = temporadas
 vingadores = Filme('Vingadores - Guerra Infinita', 2018, 160)
-print(vingadores.nome)
+print(f'Nome: {vingadores.nome} - Ano: {vingadores.ano} - Duração: {vingadores.duracao}')
 
 friends = Serie('Friends', 1995, 12)
 print (f'Nome: {friends.nome} - Ano: {friends.ano} - Temporadas: {friends.temporadas}')
