@@ -19,8 +19,17 @@ class Serie:
     def dar_likes(self):
         self.likes += 1
 
+
+
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
+vingadores.dar_like()
+
 print(f'Nome: {vingadores.nome} - Ano: {vingadores.ano} - Duração: {vingadores.duracao} - Likes: {vingadores.likes}')
 
 friends = Serie('friends', 1995, 12)
+friends.dar_likes()
+friends.dar_likes()
+
 print (f'Nome: {friends.nome} - Ano: {friends.ano} - Temporadas: {friends.temporadas} - Likes: {friends.likes}')
+
+
