@@ -40,4 +40,7 @@ friends.dar_like()
 
 print (f'{friends.nome} - {friends.temporadas} - {friends.likes}')
 
+filmes_e_series = [vingadores, friends]
 
+for programa in filmes_e_series:
+    print(f'{programa.nome} - {programa.temporadas} - {programa.likes}')
