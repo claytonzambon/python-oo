@@ -19,6 +19,9 @@ class Programa:
     def nome(self, novo_nome):
         self._nome = novo_nome.title()
 
+    def imprime(self):
+        print(f'{self._nome} - {self.ano} - {self._likes} Likes')
+
 class Filme(Programa):
     def __init__(self, nome, ano, duracao):
         super().__init__(nome, ano)
@@ -32,16 +35,11 @@ class Serie(Programa):
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 vingadores.dar_like()
 
-print(f'{vingadores.nome} - {vingadores.duracao} - {vingadores.likes}')
-
 friends = Serie('friends', 1995, 12)
 friends.dar_like()
 friends.dar_like()
 
-print (f'{friends.nome} - {friends.temporadas} - {friends.likes}')
-
 filmes_e_series = [vingadores, friends]
 
 for programa in filmes_e_series:
-    detalhes = programa.duracao if hasattr(programa, 'duracao') else programa.temporadas
-    print(f'{programa.nome} - {detalhes} D - {programa.likes}')
+    programa.imprime()
