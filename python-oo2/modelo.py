@@ -64,7 +64,7 @@ friends.dar_like()
 
 filmes_e_series = [vingadores, friends, seinfield, carros]
 
-fim_de_semana = Playlist('Fim de semana', filmes_e_series)
+playlist_fim_de_semana = Playlist('Fim de semana', filmes_e_series)
 
-for programa in filmes_e_series:
+for programa in playlist_fim_de_semana.programas:
     print(programa)
