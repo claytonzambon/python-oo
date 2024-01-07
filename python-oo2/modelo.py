@@ -67,3 +67,5 @@ print(f'Tamanho do playlist: {len(playlist_fim_de_semana)}')
 
 for programa in playlist_fim_de_semana:
     print(programa)
+
+print(f'Tá ou não tá? {friends in playlist_fim_de_semana}')
