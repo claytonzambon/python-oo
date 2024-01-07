@@ -63,5 +63,7 @@ filmes_e_series = [vingadores, friends, seinfield, carros]
 
 playlist_fim_de_semana = Playlist('Fim de semana', filmes_e_series)
 
+print(f'Tamanho do playlist: {len(playlist_fim_de_semana)}')
+
 for programa in playlist_fim_de_semana:
     print(programa)
